@@ -9,5 +9,6 @@ RUN wget https://github.com/jwilder/dockerize/releases/download/$DOCKERIZE_VERSI
 
 WORKDIR /usr/src/app
 COPY ./src .
+RUN npm install 
 EXPOSE 3000
 # ENTRYPOINT [ "node", "index.js" ]
